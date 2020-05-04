@@ -233,6 +233,125 @@
                     <div class="col-lg-12">
                         <?php $cms->ContentHTML('ordering_instructions'); ?>
                         <div class="spacer-20"></div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="menu-board">
+                                        <table>
+                                            <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_1'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_1'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_1'); ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_2'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_2'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_2'); ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_3'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_3'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_3'); ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_4'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_4'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_4'); ?>
+                                                </td>
+                                            </tr>
+							                <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_5'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_5'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_5'); ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_6'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_6'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_6'); ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_7'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_7'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_7'); ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_8'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_8'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_8'); ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_9'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_9'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_9'); ?>
+                                                </td>
+                                            </tr>
+							                <tr>
+                                                <td class="menu-category">
+                                                    <?php $cms->ContentString('men_take_cat_10'); ?>
+                                                </td>
+                                                <td class="menu-detail">
+                                                    <?php $cms->ContentString('men_take_det_10'); ?>
+                                                </td>
+                                                <td class="menu-price">
+                                                    <?php $cms->ContentString('men_take_price_10'); ?>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                        <div class="spacer-40"></div>
                         <div class="btnCTA-width wow fadeInRightBig" data-wow-offset="90">
                             <!-- <a class="btnCTA" href="mailto:catering@pastacasalingaseattle.com?subject=Lasagna Order&Body=-%20Lasagna%20size%20%28S%2C%20M%2C%20L%29%20%3F%0A-%20Cooked/uncooked%3F%0A-%20Desired%20pick%20up%20date/time%3F%0A-%20Hot%20at%20pick%20up%20time%20%20Y/N%29%20%3F%0A" role="button">Order Lasagna</a> -->
                             <a class="btnCTA" href="https://pasta-casalinga.square.site/" target="_blank"><?php $cms->ContentString('order_btn_label'); ?></a>
