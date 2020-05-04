@@ -5,8 +5,8 @@
 define('NC_LOGIN_USER', "newadmin");  // Username for content editor.
 define('NC_LOGIN_PASSWORD', "Str0ngPa$$");  // Password for content editor.
 define('NC_WEBSITE_NAME', "Pasta Casalinga");  // Your website name.
-define('NC_WEBSITE_URL', "http://pastacasalingaseattle.com/index.php");  // Your website internet address.
-define('NC_CMS_URL', "http://pastacasalingaseattle.com/nc-cms");  // Your website internet nc-cms directory address.
+define('NC_WEBSITE_URL', "https://pastacasalingaseattle.com/index.php");  // Your website internet address.
+define('NC_CMS_URL', "https://pastacasalingaseattle.com/nc-cms");  // Your website internet nc-cms directory address.
 define('NC_LANGUAGE', "english");  // Language pack to use. Currently only english is available.
 
 // Optional database settings. Modify these settings if you wish to use nc-cms's database support.

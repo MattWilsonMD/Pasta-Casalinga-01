@@ -53,6 +53,7 @@
     letter-spacing: 1px;
     display: inline-block;
     width: 100%;
+    white-space: nowrap;
 
     transition: all ease-out 0.2s;
 }
@@ -86,7 +87,7 @@
     background: #cb0000;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .navbar-collapse ul {
         width: 100%;
         transition: all ease 0.5s;
@@ -183,7 +184,7 @@
     margin-bottom: 50px;
 }
 #navbar {background-color: rgba(255, 255, 255, 0)}
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #navbar {background-color: rgba(255, 255, 255, 1);}
 }
 .navbar {
@@ -259,7 +260,7 @@
     padding-right:240px;
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 991px) and (max-width: 1199px){
     #home-sec1-elm2 {top: -210px;}
     /*#home-sec2-elm3 {right: -464px;}*/
     #home-sec2-elm1 {height: 340px;}
@@ -267,7 +268,7 @@
     #home-sec2-elm3 {position:relative;}
     #home-sec2-elm4 {padding-right:200px}
 }
-@media (min-width:768px) and (max-width: 991px) {
+@media (min-width:768px) and (max-width: 992px) {
     #home-sec1-elm2 {
         top: -230px; padding-left: 100px; padding-right: 50px;
     }
@@ -447,8 +448,8 @@ a.custombutton:hover, a.custombutton:focus {
     padding-top: 130px;
 }
 
-#about-rail-1 {
-    background-color: #cb0000;
+#events-rail-1 {
+    background-color: #ffd352;
     height: 240px;
     width: 100%;
     padding-right: 20px;
@@ -456,15 +457,15 @@ a.custombutton:hover, a.custombutton:focus {
     margin-left: 20px;
 
     /*remove this later*/
-    margin-top: 220px;
+    margin-top: 60px;
 }
-#about-img-1 {
+#events-img-1 {
     float: left;
     position: relative;
     top: -75px;
     margin-left: 20px;
 }
-#about-img-2 {
+#events-img-2 {
     float: right;
     position: relative;
     top: -140px;
@@ -2524,7 +2525,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     .navbar-header {
         float: left;
     }
@@ -2544,7 +2545,7 @@ tbody.collapse.in {
         overflow-y: auto;
     }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -2610,7 +2611,7 @@ tbody.collapse.in {
     border-width: 0 0 1px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .navbar-static-top {
         border-radius: 0;
     }
@@ -2624,7 +2625,7 @@ tbody.collapse.in {
     z-index: 1030;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .navbar-fixed-top,
     .navbar-fixed-bottom {
         border-radius: 0;
@@ -2659,7 +2660,7 @@ tbody.collapse.in {
         display: block;
     }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .navbar > .container .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
         margin-left: -15px;
@@ -2695,7 +2696,7 @@ tbody.collapse.in {
             margin-top: 4px;
         }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     .navbar-toggle {
         display: none;
     }
@@ -2756,7 +2757,7 @@ tbody.collapse.in {
             }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .navbar-form .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -2827,7 +2828,7 @@ tbody.collapse.in {
         }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .navbar-form {
         width: auto;
         padding-top: 0;
@@ -2873,7 +2874,7 @@ tbody.collapse.in {
     margin-bottom: 15px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .navbar-text {
         float: left;
         margin-right: 15px;
@@ -2881,7 +2882,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .navbar-left {
         float: left !important;
     }
@@ -4001,3 +4002,82 @@ a, a:hover {
         width: 100%;
         height: 60px;
     }
+
+.section-divider {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 100px 0 80px;
+    background-color: black;
+}
+.section-divider.sd-0-top {
+    margin-top: 0;
+}
+
+.bg-yellow-offset {
+    background-color: #ffd352;
+}
+.bg-yellow-offset > .container {
+    background-color: white;
+    padding: 0 40px 40px;
+}
+
+/* Catering Tables */
+.table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.table th {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.table tr td {
+    border-bottom: 1px solid #999;
+}
+.table tr:last-of-type td {
+    border-bottom: 0;
+}
+.table th, .table td {
+    padding: 10px;
+}
+.table th:first-of-type {
+    font-family: Paradox, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+.table p, .table-legend p {
+    margin: 0;
+}
+
+.table-legend {
+    padding: 30px;
+    background-color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+.img-has-overlay img {
+    position: relative;
+}
+.img-has-overlay::after {
+    content: "";
+    width: 268px;
+    height: 119px;
+    background-image: url("https://pastacasalingaseattle.com/images/rosemary.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -60px;
+    right: -20px;
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .bigger-gutter div[class^="col-"]:first-of-type {
+        padding-right: 30px;
+    }
+    .bigger-gutter div[class^="col-"]:last-of-type {
+        padding-left: 30px;
+    }
+}
+

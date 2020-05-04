@@ -15,7 +15,7 @@
 
     <title>Pasta Casalinga</title>
 
-    <link href="css/pasta-casalinga.min.css" rel="stylesheet" />
+    <link href="https://pastacasalingaseattle.com/css/pasta-casalinga.min.css" rel="stylesheet" />
     <script src="js/prefixfree.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,7 +54,7 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="#menu" data-scroll>Menu</a></li>
-                        <li><a href="#ordering" data-scroll>Ordering</a></li>
+                        <li><a href="#ordering" data-scroll>Take Me Home</a></li>
                         <li><a href="#catering" data-scroll>Catering</a></li>
                         <li><a href="#classes" data-scroll>Classes</a></li>
                         <li><a href="#events" data-scroll>Events</a></li>
@@ -87,6 +87,14 @@
                 <div class="spacer-80 hidden-sm hidden-xs "></div>
                 <div class="spacer-40 hidden-md hidden-lg"></div>
                 <h1 class="text-center wow fadeInUp" data-wow-offset="50">Authentic Handmade Pasta Created to Feed The Community</h1>
+                <div class="spacer-40"></div>
+
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/414818412?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                    </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+
                 <div class="spacer-80 hidden-sm hidden-xs"></div>
                 <div class="spacer-40 hidden-md hidden-lg"></div>
             </div>
@@ -126,7 +134,6 @@
     <div class="spacer-20 hidden-lg hidden-md"></div>
 
     <!-- Menu -->
-
     <section id="menu" class="wow fadeIn" data-wow-offset="50" data-wow-delay=".4s">
         <div class="container">
             <div class="row">
@@ -198,27 +205,249 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="spacer-80"></div>
-                    <p><a href="mailto:orders@pastacasalingaseattle.com?subject=Lasagna Order&body=Order information: Lasagna size (S, M, L) and desired pick up date/time: ">Order lasagna via email</a> within 24 hours. <?php $cms->ContentString('order_text'); ?></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Ordering -->
+    <section id="ordering" class="wow fadeIn" data-wow-offset="50" data-wow-delay=".2s">
+
+        <div class="section-divider"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>
+                        <?php $cms->ContentString('ordering_title'); ?>
+                    </h2>
+                    <div class="spacer-40"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-yellow-offset">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?php $cms->ContentHTML('ordering_instructions'); ?>
+                        <div class="spacer-20"></div>
+                        <div class="btnCTA-width wow fadeInRightBig" data-wow-offset="90">
+                            <!-- <a class="btnCTA" href="mailto:catering@pastacasalingaseattle.com?subject=Lasagna Order&Body=-%20Lasagna%20size%20%28S%2C%20M%2C%20L%29%20%3F%0A-%20Cooked/uncooked%3F%0A-%20Desired%20pick%20up%20date/time%3F%0A-%20Hot%20at%20pick%20up%20time%20%20Y/N%29%20%3F%0A" role="button">Order Lasagna</a> -->
+                            <a class="btnCTA" href="https://pasta-casalinga.square.site/" target="_blank"><?php $cms->ContentString('order_btn_label'); ?></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    
+
+    <!-- Catering -->
+    <section id="catering" class="wow fadeIn" data-wow-offset="50" data-wow-delay=".2s">
+
+        <div class="section-divider sd-0-top"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>
+                        <?php $cms->ContentString('catering_title'); ?>
+                    </h2>
+                    <div class="spacer-40"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table">
+                        <th><?php $cms->ContentString('catering_th_1_1'); ?></th>
+                        <th><?php $cms->ContentString('catering_th_1_2a'); ?><br><?php $cms->ContentString('catering_th_1_2b'); ?></th>
+                        <th><?php $cms->ContentString('catering_th_1_3a'); ?><br><?php $cms->ContentString('catering_th_1_3b'); ?></th>
+                        <tbody>
+                            <tr>
+                                <td><strong><?php $cms->ContentString('catering_row01_col01a'); ?></strong><br><?php $cms->ContentString('catering_row01_col01b'); ?></td>
+                                <td><?php $cms->ContentString('catering_row01_col02'); ?></td>
+                                <td><?php $cms->ContentString('catering_row01_col03'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><strong><?php $cms->ContentString('catering_row02_col01a'); ?></strong><br><?php $cms->ContentString('catering_row02_col01b'); ?></td>
+                                <td><?php $cms->ContentString('catering_row02_col02'); ?></td>
+                                <td><?php $cms->ContentString('catering_row02_col03'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><strong><?php $cms->ContentString('catering_row03_col01a'); ?></strong><br><?php $cms->ContentString('catering_row03_col01b'); ?></td>
+                                <td><?php $cms->ContentString('catering_row03_col02'); ?></td>
+                                <td><?php $cms->ContentString('catering_row03_col03'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><strong><?php $cms->ContentString('catering_row04_col01a'); ?></strong><br><?php $cms->ContentString('catering_row04_col01b'); ?></td>
+                                <td><?php $cms->ContentString('catering_row04_col02'); ?></td>
+                                <td><?php $cms->ContentString('catering_row04_col03'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><strong><?php $cms->ContentString('catering_row05_col01a'); ?></strong><br><?php $cms->ContentString('catering_row05_col01b'); ?></td>
+                                <td><?php $cms->ContentString('catering_row05_col02'); ?></td>
+                                <td><?php $cms->ContentString('catering_row05_col03'); ?></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table">
+                        <th><?php $cms->ContentString('catering_th_2_1'); ?></th>
+                        <th></th>
+                        <tbody>
+                            <tr>
+                                <td><?php $cms->ContentHTML('catering_t2_row01_col01'); ?></td>
+                                <td><?php $cms->ContentHTML('catering_t2_row01_col02'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php $cms->ContentHTML('catering_t2_row02_col01'); ?></td>
+                                <td><?php $cms->ContentHTML('catering_t2_row02_col02'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php $cms->ContentHTML('catering_t2_row03_col01'); ?></td>
+                                <td><?php $cms->ContentHTML('catering_t2_row03_col02'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php $cms->ContentHTML('catering_t2_row04_col01'); ?></td>
+                                <td><?php $cms->ContentHTML('catering_t2_row04_col02'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php $cms->ContentHTML('catering_t2_row05_col01'); ?></td>
+                                <td><?php $cms->ContentHTML('catering_t2_row05_col02'); ?></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table">
+                        <th><?php $cms->ContentString('catering_th_3_1'); ?></th>
+                        <th></th>
+                        <tbody>
+                            <tr>
+                                <td><?php $cms->ContentHTML('catering_t3_row01_col01'); ?></td>
+                                <td><?php $cms->ContentHTML('catering_t3_row01_col02'); ?></td>
+                            </tr>
+                            <tr>
+                                <td><?php $cms->ContentHTML('catering_t3_row02_col01'); ?></td>
+                                <td><?php $cms->ContentHTML('catering_t3_row02_col02'); ?></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="spacer-20"></div>
+
+                    <div class="table-legend">
+                        <?php $cms->ContentHTML('catering_legend'); ?>
+                    </div>
+                </div>
+            </div>
+            <div class="row bigger-gutter">
+                <div class="col-md-6">
+                    <?php $cms->ContentHTML('catering_details'); ?>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-has-overlay">
+                        <img class="img-responsive" src="images/slicing-salmon.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <div class="spacer-20"></div>
                     <div class="btnCTA-width wow fadeInRightBig" data-wow-offset="90">
-                        <a class="btnCTA" href="mailto:orders@pastacasalingaseattle.com?subject=Lasagna Order&body=Order information: Lasagna size (S, M, L) and desired pick up date/time: " role="button">Order Lasagna</a>
+                        <a class="btnCTA" href="mailto:catering@pastacasalingaseattle.com?subject=Catering" role="button">Order Catering</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="spacer-80"></div>
-    <div class="spacer-40 hidden-xs hidden-sm"></div>
+    
+
+    <!-- Classes -->
+    <section id="classes" class="wow fadeIn" data-wow-offset="50" data-wow-delay=".2s">
+
+    <div class="section-divider"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>
+                        <?php $cms->ContentString('classes_title'); ?>
+                    </h2>
+                    <div class="spacer-40"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="full-texture" style="padding-bottom: 20px">
+            <div class="spacer-20"></div>
+            <div class="container" style="background-color: white;">
+                <div class="col-sm-12 the-classes">
+                    <?php $cms->ContentHTML('upcoming_classes'); ?>
+                </div>
+            </div>
+        </div> -->
+        <div class="bg-yellow-offset">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 the-classes">
+                        <?php $cms->ContentHTML('classes_upcoming'); ?>
+                        <div class="spacer-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    
+
+    <!-- Private Events -->
+    <section id="events" class="wow fadeIn" data-wow-offset="50" data-wow-delay=".2s">
+
+        <div class="section-divider sd-0-top"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>
+                        <?php $cms->ContentString('events_title'); ?>
+                    </h2>
+                    <div class="spacer-40"></div>
+                </div>
+            </div>
+            <div class="row bigger-gutter">
+                <div class="col-sm-6">
+                    <h3><?php $cms->ContentString('events_subheading'); ?></h3>
+                    <div class="spacer-40"></div>
+                    <?php $cms->ContentHTML('event_details'); ?>
+                    <div class="spacer-40"></div>
+                    <div class="wow fadeInRightBig" data-wow-offset="90">
+                        <a class="btnCTA" style="width:auto;" href="mailto:michela@pastacasalingaseattle.com?subject=Private Event" role="button">Inquire About Events</a>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-sm-offset-1 hidden-xs">
+                    <div id="events-rail-1">
+                        <img id="events-img-1" data-bottom-top="top:-80px;" data-top-bottom="top:10px;" class="wow fadeIn" src="images/events-01.jpg" alt="" />
+                        <img id="events-img-2" data-bottom-top="top:-210px;" data-top-bottom="top:-30px;" class="wow fadeIn" src="images/events-02.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact -->
 
     <div id="contact" class="wow fadeIn" data-wow-offset="50" data-wow-delay=".2s">
+
+    <div class="section-divider"></div>
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Contact</h2>
+                    <h2><?php $cms->ContentString('contact_title'); ?></h2>
                 </div>
             </div>
         </div>
@@ -227,13 +456,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-offset-7 col-md-5 col-sm-6">
-                            <p>Open Tue - Sun 11am-6pm</p>
-                            <address>
-                                93 Pike Street #201 <br />
-                                Seattle, WA 98101
-                            </address>
-                            <p>(206) 445-2987</p>
-                            <p><a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#112;&#97;&#115;&#116;&#97;&#99;&#97;&#115;&#97;&#108;&#105;&#110;&#103;&#97;&#115;&#101;&#97;&#116;&#116;&#108;&#101;&#46;&#99;&#111;&#109;'>&#105;&#110;&#102;&#111;&#64;&#112;&#97;&#115;&#116;&#97;&#99;&#97;&#115;&#97;&#108;&#105;&#110;&#103;&#97;&#115;&#101;&#97;&#116;&#116;&#108;&#101;&#46;&#99;&#111;&#109;</a></p>
+                            <?php $cms->ContentHTML('contact_info'); ?>
                         </div>
                         <div class="visible-sm col-sm-offset-1 col-sm-5">
                             <img class="img-responsive" src="images/pike-place-market-dining.jpg" />
@@ -260,7 +483,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Photo Gallery</h2>
+                    <h2><?php $cms->ContentString('photos_title'); ?></h2>
                     <div class="spacer-40"></div>
                 </div>
             </div>
@@ -343,25 +566,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>About Us</h2>
+                    <h2><?php $cms->ContentString('about_title'); ?></h2>
                     <div class="spacer-30"></div>
-                    <p>Friends for decades, Michela and Nathan bring their respective Italian and Northwestern roots together to create rustic, homestyle, everyday food to feed and create community. </p>
+                        <?php $cms->ContentHTML('about_intro'); ?>
                     <div class="spacer-20"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <p><span class="h3">Michela</span> was born and raised in Torino and spent her summers on her grandmother&apos;s olive farm in the remote area of Irpinia, the inland of Naples. Her passion with cooking was gained through the observation and humble repetition of what her mother, Gina, and grandmothers, Rosa and Michela, taught. Coming from a farmers background, she made the natural decision of embracing the statement "we are what we eat." </p>
+                    <?php $cms->ContentHTML('about_michela'); ?>                
                 </div>
                 <div class="col-md-4 hidden-lg">
-                    <p><span class="h3">Nathan</span> is a Northwest Native with a deep passion for the integrity of food. A bit of a hunter and gatherer, his dedication to the integrity of food stemmed from a passion for pure ingredients pulled right from the ground (or pulled from the water.) He takes joy in sourcing the best ingredients from his neighbors at the market and curating a great flavor experience.</p>
+                    <?php $cms->ContentHTML('about_nathan'); ?>                
                 </div>
                 <div class="col-md-4">
                     <img class="img-responsive visible-lg visible-md" src="images/nate-michela-italian-food.jpg" alt="Seattle authentic italian lunch" />
                     <img class="img-responsive visible-sm visible-xs" src="images/nate-michela-italian-food-wide.jpg" alt="Authentic Italian food" />
                 </div>
                 <div class="col-md-4 visible-lg">
-                    <p><span class="h3">Nathan</span> is a Northwest Native with a deep passion for the integrity of food. A bit of a hunter and gatherer, his dedication to the integrity of food stemmed from a passion for pure ingredients pulled right from the ground (or pulled from the water.) He takes joy in sourcing the best ingredients from his neighbors at the market and curating a great flavor experience.</p>
+                    <?php $cms->ContentHTML('about_nathan'); ?>                 
                 </div>
             </div>
         </div>
